@@ -1,0 +1,21 @@
+body{
+    font-family: Cutive_Mono;
+    margin: 0;
+    max-width: 1200px;
+    font-family: 'fontCutiveMono';
+}
+
+header{
+    background-color: #F6648E;
+    height: 70px;
+    padding-inline: 30px;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+

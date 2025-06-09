@@ -1,0 +1,36 @@
+.mainImgContainer{
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color:  #f4af01;
+}
+
+.overlay {
+    height: 180px;
+    background-color: #f0d3e2;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    bottom: 120px;
+    padding-inline: 30px;
+    width: 100%;
+}
+
+.indexContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 600px;
+}
+
+.donutContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    background-color: #f0d3e2;
+    padding-block: 30px;
+    border: #f4af01 solid 20px;
+}
