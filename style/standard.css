@@ -1,8 +1,10 @@
 body{
-    font-family: Cutive_Mono;
-    margin: 0;
-    max-width: 1200px;
     font-family: 'fontCutiveMono';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header{
@@ -11,11 +13,33 @@ header{
     padding-inline: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 main{
-    width: 100vw;
-    height: 100vh;
+    flex: 1;
+    transition: all 0.3s ease;
+    background-color: #f4af01;
+    box-sizing: border-box;
 }
 
+footer{
+    background-color: #F6648E;
+    height: 100px;
+    padding-inline: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #f4af01;
+}

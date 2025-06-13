@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="icon" type="image/png" href="./assets/icons/Favicon/favicon-32x32.png">
+
+    <script src="./script/db.js"></script>
+    <script src="./script/tamplate.js"></script>
+    <script src="./script/main.js"></script>
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/standard.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./style/basket.css">
+    <link rel="stylesheet" href="./style/assets.css">
+</head>
+
+<body>
+    <body onload="Init()">
+        <header>
+            <img src="./assets/Logo/Logo.png" class="styleLogo" alt="Logo">
+            <button class="burgerMenu" onclick="toggleCart ()">&#9776;</button>
+            <div class="cart" id="cart">
+                <h3>Ihr Warenkorb</h3>
+                <ul id="cartItems"></ul>
+                <p>Zwischensumme: <span id="subtotal"></span></p>
+                <p>Lieferkosten: <span id="deliveryCost"></span></p>
+                <p>Gesamtpreis: <span id="totalPrice"></span></p>
+            </div>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="impressumSection">
+                <section>
+                    <h1>Impressum</h1>
+                
+                    <h2>Angaben gemäß § 5 TMG</h2>
+                
+                    <p><strong>Name der Website:</strong> Bestell App</p>
+                    <p><strong>Anbieter / Verantwortlich für den Inhalt:</strong><br>
+                    <strong>Restaurantname:</strong> Coffee and Donuts</p>
+                
+                    <p><strong>Inhaberin:</strong><br>
+                    Eileen Santos<br>
+                    Mittelweg 36<br>
+                    06862 Dessau-Roßlau</p>
+                
+                    <p><strong>Telefon:</strong> 0176 81495461</p>
+                
+                    <h2>Haftungsausschluss</h2>
+                
+                    <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. 
+                    Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+                
+                    <h2>Urheberrecht</h2>
+                
+                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. 
+                    Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung 
+                    außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                
+                    <h2>Bildnachweise / Quellenangaben</h2>
+                
+                    <ul>
+                        <li><strong>Menu Icon:</strong> <a href="https://www.flaticon.com" target="_blank" rel="noopener">www.flaticon.com</a> – Freepik / UI Interface</li>
+                        <li><strong>Hinzufügen Icon:</strong> <a href="https://www.flaticon.com" target="_blank" rel="noopener">www.flaticon.com</a> – Pixel perfect, Basic UI</li>
+                        <li><strong>Donut Bilder:</strong> erstellt mit ChatGPT KI</li>
+                        <li><strong>Donut Icon:</strong> <a href="https://www.flaticon.com" target="_blank" rel="noopener">www.flaticon.com</a> – Good Ware, Bakery Pack</li>
+                        <li><strong>Foto:</strong> <a href="https://www.freepik.com" target="_blank" rel="noopener">www.freepik.com</a> – <em>Schönes Frühstück mit Donut und Tasse Kaffee auf Gelb</em> von denamorado</li>
+                        <li><strong>Bin Icon:</strong> <a href="https://www.flaticon.com" target="_blank" rel="noopener">www.flaticon.com</a> Erstellt von Kiranshastry</li>
+                    </ul>
+                
+                    <p>Die verwendeten Bilder und Grafiken unterliegen teilweise den Lizenzbedingungen der jeweiligen Plattformen (z.B. Flaticon, Freepik).</p>
+                </section>
+            </div>        
+        </main>
+    
+        <footer>
+            <div><p>© 2025 Coffee & Donuts</p></div>
+            <div><a href="./index.html"> Zurück zur Startseite</a></div>
+        </footer>
+    
+    </body>
+    </html>
+</body>
+</html>
