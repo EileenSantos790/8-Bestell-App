@@ -2,28 +2,29 @@
     position: relative;
     height: 700px;
     overflow: hidden;
+    width: 100%;
+    background-color:  #f4af01;
     display: flex;
     justify-content: center;
-    background-color:  #f4af01;
 }
 
 .layout{
     display: flex;
-    height: 100%;
-    transition: all 0.3s ease;
-    background-color: #f6648e;
+    align-items: stretch;
 }
 
 .overlay {
     height: 180px;
     background-color: #f0d3e2;
-    z-index: 1;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     bottom: 0;
     left: 0;
     bottom: 120px;
     padding-inline: 30px;
-    width: 100%;
 }
 
 .indexContainer{
@@ -35,11 +36,14 @@
 
 .donutContainer{
     display: flex;
+    justify-content: center;
+    max-width: 100%;
     justify-content: space-between;
     padding-inline: 30px;
     background-color: #f0d3e2;
     padding-block: 30px;
     border: #f4af01 solid 20px;
+    box-sizing: border-box;
 
 }
 
@@ -55,3 +59,4 @@
     cursor: pointer;
     margin-left: 10px;
 }
+

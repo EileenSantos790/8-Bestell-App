@@ -20,7 +20,6 @@
 <body onload="Init()">
     <header>
         <img src="./assets/Logo/Logo.png" class="styleLogo" alt="Logo">
-        <button class="burgerMenu" onclick="toggleCart ()">&#9776;</button>
     </header>
 
     <div class="layout">
@@ -36,16 +35,18 @@
             </div>
             <div id= "Donuts"></div>
         </main>
-        <aside class="cart" id="cart">
+        <div class="cart" id="cart">
+            <div class="basket">
             <h3>Ihr Warenkorb</h3>
-            <div class="basketLine"></div>
+            <div></div>
             <ul id="cartItems"></ul>
-            <div class="basketLine"></div>
             <p>Zwischensumme: <span id="subtotal"></span></p>
             <p>Lieferkosten: <span id="deliveryCost"></span></p>
             <p>Gesamtpreis: <span id="totalPrice"></span></p>
-        </aside>
+            </div>
+        </div>
     </div>
+    
 
     <footer>
         <div><p>© 2025 Coffee & Donuts</p></div>

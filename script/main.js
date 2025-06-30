@@ -1,15 +1,4 @@
 
-
-function toggleCart() {
-    let cartElement = document.getElementById('cart');
-    cartElement.classList.toggle('show');
-}
-
-function openCart() {
-    let cartElement = document.getElementById('cart');
-    cartElement.classList.add('show');
-}
-
 function addtoCart (index) {
 
     const donut = donuts[index];
@@ -39,3 +28,4 @@ function deleteItem(itemName) {
     }
     updateCart();
 }
+

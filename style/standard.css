@@ -1,10 +1,10 @@
 body{
-    font-family: 'fontCutiveMono';
+    font-family: 'comfortaa', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
     overflow-x: hidden;
+    background-color: #f4af01;
 }
 
 header{
@@ -18,9 +18,8 @@ header{
 
 main{
     flex: 1;
-    transition: all 0.3s ease;
     background-color: #f4af01;
-    box-sizing: border-box;
+    overflow: auto;
 }
 
 footer{
@@ -32,6 +31,8 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    width: 100%;
 }
 
 a {
@@ -42,4 +43,14 @@ a {
 a:hover {
     cursor: pointer;
     color: #f4af01;
+}
+
+ul{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0;
+}
+
+h1{
+    font-weight: 700px;
 }

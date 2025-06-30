@@ -15,7 +15,7 @@ function Init() {
                     <p>${donut.description}</p>
                     <p>Price: ${donut.price.toFixed(2)}</p>
                 </div>
-                <div class="choiceContainer" onclick="openCart()">
+                <div>
                     <img src="./assets/icons/plus.png" 
                         alt="Add to cart" 
                         class="addToCart" 
@@ -34,7 +34,7 @@ function updateCart() {
     let cartHTML = '';
 
     if (Object.keys(cartData).length === 0) {
-        cartHTML = '<p>Der Warenkorb ist leer!</p>';
+        cartHTML = '<p class="cart-item">Der Warenkorb ist leer!</p>';
         document.getElementById('subtotal').textContent = '0.00 €';
         document.getElementById('deliveryCost').textContent = '0.00 €';
         document.getElementById('totalPrice').textContent = '0.00 €';
@@ -43,12 +43,15 @@ function updateCart() {
             let item = cartData[itemName];
             let itemTotal = item.quantity * item.price;
             cartHTML += `
-                <p>${itemName} x ${item.quantity} = ${itemTotal.toFixed(2)} €
-                <img src="./assets/icons/loschen.png" 
-                alt="Löschen"
-                class="deleteIcon" 
-                onclick="deleteItem('${itemName}');">
-                </p>
+                <div class="cart-item">
+                    <span>${item.quantity}×</span>
+                    <span>${itemName}</span>
+                    <span>${itemTotal.toFixed(2)} €</span>
+                    <img src="./assets/icons/loschen.png" 
+                    alt="Löschen"
+                    class="deleteIcon" 
+                    onclick="deleteItem('${itemName}');">
+                </div>
             `;
         }
 
