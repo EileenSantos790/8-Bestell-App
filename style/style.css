@@ -6,6 +6,7 @@
     background-color:  #f4af01;
     display: flex;
     justify-content: center;
+    padding-bottom:40px;
 }
 
 .layout{
@@ -44,19 +45,16 @@
     padding-block: 30px;
     border: #f4af01 solid 20px;
     box-sizing: border-box;
+    border-radius: 40px;
+}
 
+.donutContainer:hover{
+    background-color: rgba(0, 0, 0, 0.076);
 }
 
 .impressumSection{
     padding-inline: 30px;
     padding-block: 30px;
     background-color: #f0d3e2;
-}
-
-.deleteIcon{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin-left: 10px;
 }
 

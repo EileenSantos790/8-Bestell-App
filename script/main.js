@@ -29,3 +29,8 @@ function deleteItem(itemName) {
     updateCart();
 }
 
+function deleteBin(itemName) {
+    delete cartData[itemName];
+
+    updateCart();
+}

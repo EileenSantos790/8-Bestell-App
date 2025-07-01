@@ -12,11 +12,6 @@
     padding-inline: 10px;
 }
 
-.addToCart {
-    height: 25px;
-    cursor: pointer;
-}
-
 .cart-item{
     display: flex;
     justify-content: space-between;

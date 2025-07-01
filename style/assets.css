@@ -5,7 +5,7 @@
 
 .restaurantImg{
     object-fit: cover;
-    height: 600px;
+    height: 800px;
 }
 
 @keyframes rotate {
@@ -19,14 +19,44 @@
 
 .restaurantImg:hover {
     animation: rotate 5s linear infinite;
-    cursor: pointer;
 }
 
 .imgDonut{
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    min-width: 300px;
     object-fit: cover;
     border-radius: 100px;
     display: flex;
     align-items: flex-end;
+}
+
+.plusMinusCart{
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.plusMinusCart:hover {
+    color: #f6648e;
+}
+
+.addToCart {
+    cursor: pointer;
+    font-size: 45px;
+}
+
+.addToCart:hover {
+    color: #f6648e;
+}
+
+.deleteIcon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.deleteIcon:hover {
+    background-color: #f6648e;
+    border-radius: 50%;
 }

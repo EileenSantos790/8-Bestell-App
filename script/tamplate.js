@@ -11,15 +11,12 @@ function Init() {
         let donutHTML = `
             <div class="donutContainer">
                 <div>
+                    <span class="addToCart" onclick="addtoCart(${donuts.indexOf(donut)});">&#43;</span>
                     <h2>${donut.name}</h2>
                     <p>${donut.description}</p>
-                    <p>Price: ${donut.price.toFixed(2)}</p>
+                    <p>Preis: ${donut.price.toFixed(2)}</p>
                 </div>
                 <div>
-                    <img src="./assets/icons/plus.png" 
-                        alt="Add to cart" 
-                        class="addToCart" 
-                        onclick="addtoCart(${donuts.indexOf(donut)});">
                     <img class="imgDonut" src="${donut.image}" alt="${donut.name}">
                 </div>
             </div>
@@ -42,15 +39,20 @@ function updateCart() {
         for (let itemName in cartData) {
             let item = cartData[itemName];
             let itemTotal = item.quantity * item.price;
+
+            let donutIndex = donuts.findIndex (donut => donut.name === itemName);
+
             cartHTML += `
                 <div class="cart-item">
+                    <span class="plusMinusCart" onclick="deleteItem ('${itemName}')">&#8722;</span>
                     <span>${item.quantity}×</span>
+                    <span class="plusMinusCart" onclick="addtoCart('${donutIndex}')">&#43;</span>
                     <span>${itemName}</span>
                     <span>${itemTotal.toFixed(2)} €</span>
                     <img src="./assets/icons/loschen.png" 
                     alt="Löschen"
                     class="deleteIcon" 
-                    onclick="deleteItem('${itemName}');">
+                    onclick="deleteBin('${itemName}');">
                 </div>
             `;
         }
