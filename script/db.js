@@ -25,7 +25,7 @@ const donuts = [
         image: "./assets/images/smartiesDonut.png"
     },
     {
-        name: "Triple Chocolate Donut",
+        name: "Chocolate Donut",
         description: "Weiße, braune und dunkle Schokolade",
         price: 7.00,
         image: "./assets/images/tripleChocolateDonut.png"

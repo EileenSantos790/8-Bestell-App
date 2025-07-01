@@ -20,6 +20,7 @@
 <body onload="Init()">
     <header>
         <img src="./assets/Logo/Logo.png" class="styleLogo" alt="Logo">
+        <button id= "toggleBtn" onclick="toggleCart ()">&#9776;</button>
     </header>
 
     <div class="layout">
@@ -39,7 +40,10 @@
         </main>
         <div class="cart" id="cart">
             <div class="basket">
-            <h3>Ihr Warenkorb</h3>
+                <div class="cartHeader">
+                    <h3>Ihr Warenkorb</h3>
+                    <p class="closingCart" onclick="closeCart ()">X</p>
+                </div>
             <div></div>
             <ul id="cartItems"></ul>
             <p>Zwischensumme: <span id="subtotal"></span></p>

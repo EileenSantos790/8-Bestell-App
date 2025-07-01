@@ -1,7 +1,6 @@
 
 .cart {
     width: 450px;
-    position: sticky;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #f0d3e2;
     top: 0;
@@ -22,12 +21,18 @@
     padding-block: 20px;
 }
 
-.cart-item{
+.cartHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px dashed rgb(34, 34, 34);
-    border-top: 1px dashed rgb(34, 34, 34);
-    padding-block: 20px;
+}
+
+.closingCart {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.closingCart:hover {
+    color: #f6648e;
 }

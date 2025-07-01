@@ -13,6 +13,8 @@ function addtoCart (index) {
     }
     subtotal += donut.price;
 
+    openCart();
+
     updateCart();
 }
 
@@ -33,4 +35,21 @@ function deleteBin(itemName) {
     delete cartData[itemName];
 
     updateCart();
+}
+
+function toggleCart() {
+    let cartElement = document.getElementById('cart');
+    cartElement.classList.toggle('show');
+
+    updateCart();
+}
+
+function openCart() {
+    let cartElement = document.getElementById('cart');
+    cartElement.classList.add('show');
+}
+
+function closeCart() {
+    let cartElement = document.getElementById('cart');
+    cartElement.classList.remove('show');
 }

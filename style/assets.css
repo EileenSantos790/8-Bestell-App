@@ -22,7 +22,7 @@
 }
 
 .imgDonut{
-    height: 120px;
+    height: 100px;
     min-width: 250px;
     object-fit: cover;
     border-radius: 100px;

@@ -9,11 +9,6 @@
     padding-bottom:40px;
 }
 
-.layout{
-    display: flex;
-    align-items: stretch;
-}
-
 .overlay {
     height: 180px;
     background-color: #f0d3e2;
@@ -22,7 +17,6 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    bottom: 0;
     left: 0;
     bottom: 120px;
     padding-inline: 30px;
@@ -63,16 +57,96 @@
     .donutContainer{
         flex-direction: column;
     }
+}
 
-    h1 {
-        font-size: 24px;
+@media (min-width: 850px) {
+    .cart{
+        position: sticky;
+        transform: none;
     }
 
-    h2 {
-        font-size: 18px;
+    .layout {
+        display: flex;
+        align-items: stretch;
+    }
+
+    #toggleBtn {
+        display: none;
+    }
+
+    .closingCart {
+        display: none;
     }
 }
+
+    
 
 @media (max-width: 850px){
-    
+
+    .layout{
+        display: block;
+    }
+
+    #toggleBtn {
+        display: flex;
+        font-size: 32px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    .cart {
+        position: fixed;
+        display: none;
+    }
+        
+    .cart.show {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: top 1s ease-in-out;
+    }
+
+    .basket {
+        margin: 20px;   }
+
 }
+
+@media (max-width: 450px) {
+
+    .donutContainer .imgDonut{
+        min-width: 200px;
+    }
+
+    .mainImgContainer .restaurantImg {
+        height: 400px;
+    }
+
+    .overlay {
+        bottom: 80px;
+        top: 300px;
+        width: -webkit-fill-available;
+    }
+
+    .overlay h1  {
+        font-size: 24px;
+    }
+    
+    .indexContainer h2 {
+        font-size: 20px;
+    }
+    
+    .overlay h3 {
+        font-size: 16px;
+    }
+
+    .indexContainer{
+        padding-top: 480px;
+    }
+
+    .mainImgContainer {
+        height: 560px;
+    }
+}
+
