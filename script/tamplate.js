@@ -12,7 +12,7 @@ function Init() {
             <div class="donutContainer">
                 <div>
                     <span class="addToCart" onclick="addtoCart(${donuts.indexOf(donut)});">&#43;</span>
-                    <h2>${donut.name}</h2>
+                    <h3>${donut.name}</h3>
                     <p>${donut.description}</p>
                     <p>Preis: ${donut.price.toFixed(2)}</p>
                 </div>
