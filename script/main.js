@@ -28,6 +28,7 @@ function deleteItem(itemName) {
     if (item.quantity === 0) {
         delete cartData[itemName];
     }
+
     updateCart();
 }
 
@@ -52,4 +53,16 @@ function openCart() {
 function closeCart() {
     let cartElement = document.getElementById('cart');
     cartElement.classList.remove('show');
+}
+
+function clearLocalStorage() {
+
+    cartData = {};
+    subtotal = 0;
+
+    localStorage.removeItem('cartData');
+    localStorage.removeItem('subtotal');
+
+    updateCart();
+    alert("Ihre Bestellung wurde eingereicht! Vielen Dank!");
 }

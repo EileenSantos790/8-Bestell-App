@@ -36,3 +36,23 @@
 .closingCart:hover {
     color: #f6648e;
 }
+
+.cartButton{
+    
+    background-color: #F6648E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: -webkit-fill-available;
+    height: 40px;
+    margin-block: 30px;
+    font-size: 18px;
+    font-family: 'comfortaa';
+}
+
+.cartButton:hover{
+    background-color: #f4af01;
+    color: black;
+}

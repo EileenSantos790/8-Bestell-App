@@ -4,6 +4,18 @@ let deliveryCost = 2.5;
 
 
 function Init() {
+
+    const storedCart = localStorage.getItem('cartData');
+    const storedSubtotal = localStorage.getItem('subtotal');
+
+    if (storedCart && storedSubtotal) {
+        cartData = JSON.parse(storedCart);
+        subtotal = parseFloat(storedSubtotal);
+    } else {
+        cartData = {};
+        subtotal = 0;
+    }
+
     let donutContainer = document.getElementById('Donuts');
 
     donuts.forEach((donut) => {
@@ -24,11 +36,14 @@ function Init() {
         donutContainer.innerHTML += donutHTML;
         console.log(2, donutHTML);
     });
+
+    updateCart();
 }
 
 function updateCart() {
 
     let cartHTML = '';
+    subtotal = 0;
 
     if (Object.keys(cartData).length === 0) {
         cartHTML = '<p class="cart-item">Der Warenkorb ist leer!</p>';
@@ -40,13 +55,15 @@ function updateCart() {
             let item = cartData[itemName];
             let itemTotal = item.quantity * item.price;
 
+            subtotal+= itemTotal;
+
             let donutIndex = donuts.findIndex (donut => donut.name === itemName);
 
             cartHTML += `
                 <div class="cart-item">
                     <span class="plusMinusCart" onclick="deleteItem ('${itemName}')">&#8722;</span>
                     <span>${item.quantity}×</span>
-                    <span class="plusMinusCart" onclick="addtoCart('${donutIndex}')">&#43;</span>
+                    <span class="plusMinusCart" onclick="addtoCart(${donutIndex})">&#43;</span>
                     <span>${itemName}</span>
                     <span>${itemTotal.toFixed(2)} €</span>
                     <img src="./assets/icons/loschen.png" 
@@ -64,4 +81,7 @@ function updateCart() {
     }
 
     document.getElementById('cartItems').innerHTML = cartHTML;
+
+    localStorage.setItem('cartData', JSON.stringify(cartData));
+    localStorage.setItem('subtotal', subtotal.toFixed(2));
 }
