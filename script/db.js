@@ -1,4 +1,3 @@
-
 const donuts = [
     {
         name: "Lavendel Donut",
@@ -37,4 +36,3 @@ const donuts = [
         image: "./assets/images/vanillaDonut.png"
     }
 ];
-

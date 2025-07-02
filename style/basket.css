@@ -1,4 +1,3 @@
-
 .cart {
     width: 450px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -38,7 +37,6 @@
 }
 
 .cartButton{
-    
     background-color: #F6648E;
     color: white;
     border: none;

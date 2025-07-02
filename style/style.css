@@ -53,7 +53,6 @@
 }
 
 @media (max-width: 1000px) {
-
     .donutContainer{
         flex-direction: column;
     }
@@ -77,12 +76,13 @@
     .closingCart {
         display: none;
     }
+
+    .impressumSection {
+        height: 100vh;
+    }
 }
 
-    
-
 @media (max-width: 850px){
-
     .layout{
         display: block;
     }
@@ -100,7 +100,7 @@
         position: fixed;
         display: none;
     }
-        
+
     .cart.show {
         display: block;
         width: 100%;
@@ -109,12 +109,11 @@
     }
 
     .basket {
-        margin: 20px;   }
-
+        margin: 20px;   
+    }
 }
 
 @media (max-width: 450px) {
-
     .donutContainer .imgDonut{
         min-width: 200px;
     }
@@ -132,11 +131,11 @@
     .overlay h1  {
         font-size: 24px;
     }
-    
+
     .indexContainer h2 {
         font-size: 20px;
     }
-    
+
     .overlay h3 {
         font-size: 16px;
     }

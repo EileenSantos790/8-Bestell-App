@@ -1,6 +1,4 @@
-
 function addtoCart (index) {
-
     const donut = donuts[index];
 
     if (cartData[donut.name]) {
@@ -12,23 +10,18 @@ function addtoCart (index) {
         }
     }
     subtotal += donut.price;
-
     openCart();
-
     updateCart();
 }
 
-function deleteItem(itemName) {
-    
+function deleteItem(itemName) { 
     let item = cartData[itemName];
-
     item.quantity -= 1;
     subtotal -= item.price;
-    
+
     if (item.quantity === 0) {
         delete cartData[itemName];
     }
-
     updateCart();
 }
 
@@ -64,5 +57,11 @@ function clearLocalStorage() {
     localStorage.removeItem('subtotal');
 
     updateCart();
-    alert("Ihre Bestellung wurde eingereicht! Vielen Dank!");
+
+    let message = document.getElementById('message');
+    message.textContent = 'Vielen Dank für Ihre Bestellung!';
+    setTimeout(() => {
+        message.textContent = '';
+        closeCart();
+    }, 3000);
 }

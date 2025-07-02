@@ -1,6 +1,5 @@
 .styleLogo{
     height: 48px;
-
 }
 
 .restaurantImg{
@@ -42,11 +41,23 @@
 
 .addToCart {
     cursor: pointer;
-    font-size: 45px;
+    font-size: 35px;
+    border: none;
+    background-color: #f6648e;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 10px;
+    align-items: center;
 }
 
 .addToCart:hover {
     color: #f6648e;
+}
+
+.imgAndAddToCart{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .deleteIcon{
