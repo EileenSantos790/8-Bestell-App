@@ -29,6 +29,7 @@ function renderDonuts() {
 }
 
 function generateDonutHTML(donut, index) {
+    const count = cartData[donut.name]?.quantity || 0;
     return `
         <div class="donutContainer">
             <div>
@@ -36,7 +37,7 @@ function generateDonutHTML(donut, index) {
                 <p>${donut.description}</p>
                 <p>Preis: ${donut.price.toFixed(2)}</p>
             </div>
-            <div class="imgAddToCart"><button class="addToCart" onclick="addtoCart(${index});">&#8853;</button><img class="imgDonut" src="${donut.image}" alt="${donut.name}"></div>
+            <div class="imgAddToCart"><button class="addToCart" onclick="addtoCart(${index});"><span id="cartCount-${index}">${count}</span></button><img class="imgDonut" src="${donut.image}" alt="${donut.name}"></div>
         </div>
     `;
 }
@@ -52,6 +53,8 @@ function updateCart() {
     document.getElementById('cartItems').innerHTML = cartHTML;
     localStorage.setItem('cartData', JSON.stringify(cartData));
     localStorage.setItem('subtotal', subtotal.toFixed(2));
+
+    cartCount();
 }
 
 function renderEmptyCart() {
