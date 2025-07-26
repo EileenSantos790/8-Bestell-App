@@ -1,4 +1,4 @@
-function addtoCart (index) {
+function addtoCart(index) {
     const donut = donuts[index];
 
     if (cartData[donut.name]) {

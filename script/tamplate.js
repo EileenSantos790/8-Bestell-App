@@ -36,7 +36,7 @@ function generateDonutHTML(donut, index) {
                 <p>${donut.description}</p>
                 <p>Preis: ${donut.price.toFixed(2)}</p>
             </div>
-            <div class="imgAndAddToCart"><button class="addToCart" onclick="addtoCart(${index});">&#8853;</button><img class="imgDonut" src="${donut.image}" alt="${donut.name}"></div>
+            <div class="imgAddToCart"><button class="addToCart" onclick="addtoCart(${index});">&#8853;</button><img class="imgDonut" src="${donut.image}" alt="${donut.name}"></div>
         </div>
     `;
 }

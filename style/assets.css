@@ -51,10 +51,10 @@
 }
 
 .addToCart:hover {
-    color: #f6648e;
+    color: white;
 }
 
-.imgAndAddToCart{
+.imgAddToCart {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -70,4 +70,9 @@
 .deleteIcon:hover {
     background-color: #f6648e;
     border-radius: 50%;
+}
+
+.imgCart{
+    width: 50px;
+    height: 50px;
 }

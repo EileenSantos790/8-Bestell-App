@@ -115,7 +115,7 @@
 
 @media (max-width: 450px) {
     .donutContainer .imgDonut{
-        min-width: 200px;
+        display: none;
     }
 
     .mainImgContainer .restaurantImg {
@@ -128,7 +128,7 @@
         width: -webkit-fill-available;
     }
 
-    .overlay h1  {
+    .overlay h1 {
         font-size: 24px;
     }
 
@@ -147,5 +147,7 @@
     .mainImgContainer {
         height: 560px;
     }
-}
 
+    .toggleBtn {
+    }
+}
