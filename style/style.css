@@ -147,4 +147,16 @@
     .mainImgContainer {
         height: 560px;
     }
+
+    .deleteIcon{
+        margin-left: 5px;
+    } 
+
+    .plusMinusCart {
+        font-size: 16px;
+    }
+
+    .basket {
+        font-size: 12px;
+    }
 }
